@@ -1,0 +1,107 @@
+
+/**********************
+Base Styles
+**********************/
+
+body {
+  background-image: url(../IMG/lined_paper.png);
+  
+}
+
+
+#home {
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Permanent Marker', sans-serif;
+	color: #0d1a26;
+	float: right;
+	margin-top: 1em;
+	margin-right: 5em;
+}
+
+.page-content {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+
+.site-preview {
+	width: 80%;
+	margin-bottom: 3.2em;
+}
+
+
+#siteLink{
+	font-family: 'Permanent Marker', sans-serif; 
+	display: block;
+	text-decoration: none;
+}
+
+
+
+p {
+	font-family: 'Annie Use Your Telescope', Arial, sans-serif;
+	font-size: 1.5em;
+	text-align: left;
+}
+
+
+
+
+
+
+/**********************
+Media Queries
+**********************/
+
+@media (min-width: 1024px) {
+
+		.page-content {
+		width: 60%;
+		margin: auto;
+		text-align: center;
+	}
+
+
+	.site-preview {
+		width: 60%;
+		margin-bottom: 3.2em;
+	}
+
+	#siteLink {
+		margin-bottom: 2.5em;
+	}
+
+	p {
+		width: 40%;
+		margin: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/**********************
+About.html Styles
+**********************/
+
+.about-pic {
+	width: 7em;
+	height: 7em;
+	margin-top: 3em;
+}
+
+@media (min-width: 1024px) {
+	.about-pic {
+		width: 14em;
+		height: 14em;
+	}
+}

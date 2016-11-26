@@ -1,0 +1,221 @@
+/**********************
+Header
+**********************/
+
+
+body {
+  background-image: url(../IMG/lined_paper.png);
+  
+}
+
+header h1, h2 {
+  text-align: center;
+}
+
+
+h1 {
+  font-family: 'Permanent Marker', sans-serif;
+  color: #0d1a26;
+  font-size: 2em;
+  margin-top: 0.4em;
+  margin-bottom: -0.3em;
+}
+
+h2 {
+ font-family: "Comic Sans MS", sans-serif;
+ color: #00091a;
+}
+
+ a:active {
+  outline-style: none;
+}
+
+
+/**************************
+Main Content of Site
+***************************/
+
+
+
+.mainContent {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+
+
+.sitePreview{
+  width: 14em;
+  height: 20em;
+  border: 30px solid black;
+  -moz-border-image: url(../IMG/scribblesframe.png) 8% stretch; 
+  -webkit-border-image: url(../IMG/scribblesframe.png) 8% stretch; 
+  -o-border-image: url(../IMG/scribblesframe.png) 8% stretch;
+  border-image: url(../IMG/scribblesframe.png) 8% stretch;
+  overflow: hidden;
+  margin: auto;
+  
+}
+
+.sitePreview .exampleSlider{
+  display: block;
+  width: 126em;
+  height: 19em;
+  margin: 0;
+  padding: 0;
+}
+
+
+.sitePreview .slide {
+  float: left;
+  list-style-type: none;
+  width: 14em;
+  height: 19em;
+}
+
+.sitePreview .slide img{
+  float: left;
+  list-style-type: none;
+  width: 14em;
+  height: 19em;
+}
+
+
+.arrowLeft {
+  width: 5em;
+  height: 5em;
+  margin-right: 1.5em;
+}
+
+.arrowRight {
+  width: 5em;
+  height: 5em;
+  margin-left: 1.5em;
+}
+
+#pencil {
+  width: 12em;
+  height: 3em;
+  margin: auto;
+  display: block;
+}
+
+
+
+
+
+/**************************
+Media Queries - Tablet
+***************************/
+
+
+@media (min-width: 768px) {
+  .mainContent {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items:  center;
+    align-items:  center;
+  }
+
+  .left { order: 1; }
+  .sitePreview { order: 2; }
+  .right { order: 3; }
+
+  .sitePreview {
+    width: 30em;
+    overflow: hidden;
+    margin-bottom: 5em;
+  }  
+
+    .sitePreview .exampleSlider{
+    width: 270em;
+  }
+
+  .sitePreview .slide {
+    width: 30em;
+  }
+
+  .sitePreview .slide img{
+    width: 30em;
+  }
+
+  #pencil {
+    width: 20em;
+    height: 4em;
+  }
+
+}
+
+
+
+
+
+
+/**************************
+Media Queries - Desktop
+***************************/
+
+
+@media (min-width: 1024px) {
+
+  .sitePreview {
+    width: 40em;
+    height: 30em;
+    overflow: hidden;
+    margin-bottom: 5em;
+  }  
+
+   .sitePreview .exampleSlider{
+    width: 360em;
+  }
+
+  
+   .sitePreview .slide{
+    width: 40em;
+    height: 30em;
+  }
+
+  .sitePreview .slide img{
+    width: 40em;
+    height: 30em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .arrowLeft {
+    margin-left: 5em;
+  }
+
+  .arrowRight {
+    margin-right: 5em;
+  }
+
+}
+
+
+@media (min-width: 1400px) {
+  .arrowLeft {
+    margin-left: 10em;
+  }
+
+  .arrowRight {
+    margin-right: 10em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .arrowLeft {
+    margin-left: 20em;
+  }
+
+  .arrowRight {
+    margin-right: 20em;
+  }
+}
